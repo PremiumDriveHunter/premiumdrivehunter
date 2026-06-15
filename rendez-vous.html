@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Demande de rendez‑vous – PremiumDrive Hunter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">Premium<span>Drive</span> Hunter</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="recherches.html">Recherches en cours</a>
+    <a href="avis.html">Avis</a>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+</header>
+
+<main class="main-wrapper">
+  <section class="section">
+    <h1 class="section-title">Demander un rendez‑vous</h1>
+    <p class="section-subtitle">
+      Expliquez votre projet, je vous recontacte pour un échange téléphonique ou visio afin de lancer une recherche personnalisée.
+    </p>
+
+    <form name="rendez-vous" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="rendez-vous">
+      <div class="form-row">
+        <label for="nom">Nom complet</label>
+        <input id="nom" name="nom" type="text" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Adresse email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="form-row">
+        <label for="telephone">Téléphone</label>
+        <input id="telephone" name="telephone" type="tel" required>
+      </div>
+      <div class="form-row">
+        <label for="type">Type de véhicule recherché</label>
+        <input id="type" name="type" type="text" placeholder="Ex : Berline, SUV, électrique…" required>
+      </div>
+      <div class="form-row">
+        <label for="budget">Budget approximatif</label>
+        <input id="budget" name="budget" type="text" placeholder="Ex : 20 000 € – 30 000 €" required>
+      </div>
+      <div class="form-row">
+        <label for="date">Date souhaitée pour l’échange</label>
+        <input id="date" name="date" type="date">
+      </div>
+      <div class="form-row">
+        <label for="message">Précisions sur votre projet</label>
+        <textarea id="message" name="message" placeholder="Usage, kilométrage souhaité, marques préférées…"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Envoyer ma demande</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div>© PremiumDrive Hunter – Courtage automobile</div>
+  <div>
+    <a href="mentions-legales.html">Mentions légales</a> ·
+    <a href="politique-confidentialite.html">Confidentialité</a> ·
+    <a href="cgv.html">CGV</a>
+  </div>
+</footer>
+</body>
+</html>
